@@ -27,10 +27,17 @@ This is a Resume Analyzer tool built with Streamlit, HuggingFace transformers, a
 
 ### Installation
 
-1. Clone the repository:
    ```bash
    git clone <repository_url>
    cd <project_directory>
+   pip install -r requirements.txt
+   python resumerefiner.py
+
+
+
+
+
+<img width="1222" alt="image" src="https://github.com/user-attachments/assets/7a4008c3-5ad4-4370-be1d-1b60e713e4e9" />
 
 
 <img width="703" alt="image" src="https://github.com/user-attachments/assets/2e756035-5fc2-4a79-b469-1d84d4ee41a8" />
