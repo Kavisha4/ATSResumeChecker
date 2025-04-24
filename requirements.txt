@@ -4,3 +4,6 @@ fitz
 json
 certifi
 ssl
+transformers 
+PyPDF2 
+torch
