@@ -11,7 +11,6 @@
 # ssl_context = ssl.create_default_context(cafile=certifi.where())
 
 # # === CONFIG ===
-# HUGGINGFACE_API_TOKEN = "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"  # Replace with your token
 # # MODEL = "distilbert-base-uncased"  # Smaller model example
 # # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
 
@@ -40,7 +39,6 @@
 # HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_TOKEN}"}
 
 
-# # HUGGINGFACE_API_TOKEN = "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"  # Replace with your token
 # # MODEL = "mistralai/Mistral-7B-Instruct-v0.1"
 # # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
 # # HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_TOKEN}"}
@@ -164,40 +162,18 @@ import os
 
 # Load environment variables from .env file
 load_dotenv()
+
+# Access your secret
+HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
+
 os.environ['CURL_CA_BUNDLE'] = ''
 
 ssl_context = ssl.create_default_context(cafile=certifi.where())
 
 # === CONFIG ===
-HUGGINGFACE_API_TOKEN = "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"  # Replace with your token
 
 MODEL = "bigscience/bloomz-560m"  # Choose a suitable model
 API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-# # MODEL = "distilbert-base-uncased"  # Smaller model example
-# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-# # MODEL = "google/flan-t5-base"
-# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-# # MODEL = "gpt2"
-# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-# # MODEL = "bigscience/bloomz-560m"  # or "google/flan-t5-small"
-# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-
-# MODEL = "bigscience/bloomz-560m"  
-# API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-
-# # MODEL = "tiiuae/falcon-7b-instruct"  
-# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-# # MODEL = "google/flan-t5-small"
-# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
-
-
 
 HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_TOKEN}"}
 
