@@ -159,7 +159,11 @@ import time  # For retries with backoff
 import ssl
 import certifi
 import os
+from dotenv import load_dotenv
+import os
 
+# Load environment variables from .env file
+load_dotenv()
 os.environ['CURL_CA_BUNDLE'] = ''
 
 ssl_context = ssl.create_default_context(cafile=certifi.where())
@@ -169,7 +173,35 @@ HUGGINGFACE_API_TOKEN = "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"  # Replace with 
 
 MODEL = "bigscience/bloomz-560m"  # Choose a suitable model
 API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+# # MODEL = "distilbert-base-uncased"  # Smaller model example
+# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+# # MODEL = "google/flan-t5-base"
+# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+# # MODEL = "gpt2"
+# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+# # MODEL = "bigscience/bloomz-560m"  # or "google/flan-t5-small"
+# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+
+# MODEL = "bigscience/bloomz-560m"  
+# API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+
+# # MODEL = "tiiuae/falcon-7b-instruct"  
+# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+# # MODEL = "google/flan-t5-small"
+# # API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
+
+
+
 HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_TOKEN}"}
+
+
 
 # === FUNCTION TO EXTRACT TEXT FROM PDF ===
 def extract_text_from_pdf(uploaded_file):
