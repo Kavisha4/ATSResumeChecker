@@ -1,5 +1,8 @@
 # Resume Analyzer
 
+<img width="1271" alt="image" src="https://github.com/user-attachments/assets/64ea7a09-47fd-4afa-988f-f09633709337" />
+
+
 This is a Resume Analyzer tool built with Streamlit, HuggingFace transformers, and PyPDF2. The application provides feedback on resume content, with a focus on improving ATS (Applicant Tracking System) optimization and overall resume quality.
 
 ## Features
@@ -15,6 +18,11 @@ This is a Resume Analyzer tool built with Streamlit, HuggingFace transformers, a
 - **HuggingFace Transformers**: To analyze the text and provide feedback using a zero-shot classification model.
 - **Python Regex**: To process and clean resume data (e.g., redact phone numbers and emails).
 
+## Architecture Diagram
+
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/d87b8896-d965-4b21-9674-24d7defd9ba7" />
+
+
 ## Setup
 
 ### Prerequisites
@@ -24,6 +32,7 @@ This is a Resume Analyzer tool built with Streamlit, HuggingFace transformers, a
 - HuggingFace Transformers
 - Certifi
 - dotenv
+- 
 
 ### Installation
 
@@ -34,10 +43,3 @@ This is a Resume Analyzer tool built with Streamlit, HuggingFace transformers, a
    python resumerefiner.py
 
 
-
-
-
-<img width="1222" alt="image" src="https://github.com/user-attachments/assets/7a4008c3-5ad4-4370-be1d-1b60e713e4e9" />
-
-
-<img width="703" alt="image" src="https://github.com/user-attachments/assets/2e756035-5fc2-4a79-b469-1d84d4ee41a8" />
