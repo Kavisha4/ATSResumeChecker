@@ -3,6 +3,8 @@
 <img width="1271" alt="image" src="https://github.com/user-attachments/assets/64ea7a09-47fd-4afa-988f-f09633709337" />
 
 
+If you are using the repository for personal purposes, be sure to give it a star and follow my account. 
+
 This is a Resume Analyzer tool built with Streamlit, HuggingFace transformers, and PyPDF2. The application provides feedback on resume content, with a focus on improving ATS (Applicant Tracking System) optimization and overall resume quality.
 
 ## Features
